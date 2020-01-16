@@ -1,0 +1,35 @@
+.my_container {
+    .comics-container {
+        @include flex-center;
+        .comic{
+            flex-basis: calc(100% / 6);
+            flex-grow: 1;
+            margin: 30px;
+            height: 400px;
+            background: rgba(49, 47, 47,0.8);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            @include flex-column-between;
+            .review{
+                height:100px;
+                overflow-y: scroll;
+            }
+            img{
+                width:50px;
+            }
+            &:hover{
+                opacity:0.9;
+            }
+            
+            strong,small{
+                display: block;
+                margin: 10px 0;
+            }
+            h3{
+                font-size: medium;
+                color:grey;
+            }
+            }
+        }
+    }
